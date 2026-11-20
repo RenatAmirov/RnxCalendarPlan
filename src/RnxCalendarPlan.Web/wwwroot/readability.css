@@ -1,0 +1,474 @@
+/* Shared text sizes keep task details readable at every viewport width. */
+.subtitle,
+.stat-label,
+.hero .hero-subtitle,
+.zone-control,
+.topbar-path,
+nav a,
+.btn,
+.session-main strong,
+.session-time,
+.progress-panel h2,
+.track-progress-label,
+.prompt-card p,
+.topic-card p,
+.ai-intro p,
+.form-field,
+.form-field input,
+.form-field select,
+.form-field textarea,
+.topic-summary,
+.question-list,
+.prompt-text,
+.page-note,
+.search-input,
+.filter-select,
+.search-result {
+  font-size: 0.875rem;
+}
+.session-detail,
+.track-tag,
+.week-toolbar,
+.week-strip .day-pill span,
+.schedule-day,
+.panel-bottom,
+.stat-note,
+.progress-foot,
+.ai-teaser p,
+.focus-caption,
+.focus-select,
+.calendar-legend,
+.topic-card-foot,
+.prompt-duration,
+.form-help,
+.overlap-warning,
+.dialog-header p,
+.form-error,
+.dialog-label,
+.topic-resource,
+.count-part span,
+.countdown-note,
+.sidebar-goal p,
+.sidebar-bottom div > span,
+.hero-meta,
+.text-button,
+.panel-head .text-button {
+  font-size: 0.75rem;
+}
+.eyebrow,
+.overline,
+.workspace-label,
+.brand-caption,
+.sidebar-bottom strong {
+  font-size: 0.75rem;
+}
+.calendar-event {
+  font-size: 0.75rem;
+}
+.week-event {
+  font-size: 0.8125rem;
+}
+.calendar-event span {
+  display: inline;
+}
+.week-event span {
+  display: block;
+}
+.month-date,
+.month-day-name {
+  font-size: 0.875rem;
+}
+.hero-meta {
+  margin-left: 0;
+}
+.hero h2 {
+  font-size: 1.65rem;
+}
+.sidebar-goal .text-button {
+  font-size: 0.75rem;
+}
+.sidebar-goal-title {
+  font-size: 0.8125rem;
+}
+.sidebar-goal {
+  margin-top: 38px;
+}
+.topbar {
+  padding-inline: 32px;
+}
+.topbar-tools {
+  gap: 16px;
+}
+.search-button {
+  font-size: 0.75rem;
+}
+.search-button kbd {
+  margin-left: 4px;
+}
+.progress-panel {
+  padding: 22px;
+}
+.track-progress {
+  margin: 18px 0;
+}
+.progress-foot {
+  line-height: 1.8;
+}
+.session-row {
+  padding-block: 20px;
+}
+.session-time {
+  min-width: 45px;
+}
+.session-detail {
+  gap: 6px;
+}
+.stat-value {
+  font-size: 1.8rem;
+}
+.stat-note {
+  line-height: 1.6;
+}
+.page-heading .btn {
+  font-size: 0.8125rem;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  line-height: 1.5;
+}
+.ai-teaser h3 {
+  font-size: 1rem;
+}
+.ai-teaser p {
+  line-height: 1.8;
+}
+.ai-teaser .btn {
+  font-size: 0.75rem;
+}
+.topic-card h3 {
+  font-size: 1rem;
+}
+.topic-card {
+  min-height: 260px;
+}
+.focus-head {
+  gap: 8px;
+}
+.focus-head h3 {
+  font-size: 0.875rem;
+}
+.focus-controls .btn {
+  font-size: 0.75rem;
+}
+.badge {
+  font-size: 0.6875rem;
+}
+.toolbar .btn {
+  font-size: 0.75rem;
+}
+.month-cell {
+  min-height: 135px;
+}
+.segmented button {
+  font-size: 0.8125rem;
+}
+.chart-day > span {
+  font-size: 0.75rem;
+}
+.insight p {
+  font-size: 0.875rem;
+}
+.progress-list p {
+  font-size: 0.8125rem;
+}
+.search-result small {
+  font-size: 0.75rem;
+}
+.dialog-header h2 {
+  font-size: 1.25rem;
+}
+@media (max-width: 1200px) {
+  .topbar-path > span:first-of-type {
+    display: none;
+  }
+  .path-divider {
+    display: none;
+  }
+  .hero {
+    flex-wrap: wrap;
+  }
+  .countdown-wrap {
+    min-width: 210px;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr) 285px;
+  }
+  .stat {
+    padding: 17px;
+  }
+  .stat-icon {
+    display: none;
+  }
+  .topbar {
+    padding-inline: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 25px;
+  }
+  .countdown-wrap {
+    min-width: 190px;
+  }
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+  .month-cell {
+    min-height: 115px;
+  }
+  .sidebar {
+    width: 200px;
+  }
+  .workspace {
+    margin-left: 200px;
+  }
+  .hero-meta {
+    gap: 8px;
+  }
+  .stat-label {
+    font-size: 0.8125rem;
+  }
+}
+@media (max-width: 760px) {
+  .sidebar {
+    width: 236px;
+  }
+  .workspace {
+    margin-left: 0;
+  }
+  .topbar {
+    padding-inline: 14px;
+  }
+  .topbar-tools {
+    gap: 8px;
+  }
+  .topbar-path {
+    gap: 8px;
+  }
+  .topbar-path > span:first-of-type {
+    display: none;
+  }
+  .topbar-path strong,
+  .zone-control {
+    font-size: 0.75rem;
+  }
+  .page-heading {
+    flex-wrap: wrap;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero .hero-subtitle {
+    font-size: 0.8125rem;
+  }
+  .hero-meta {
+    font-size: 0.75rem;
+  }
+  .countdown-wrap {
+    width: 100%;
+  }
+  .countdown-title {
+    font-size: 0.6875rem;
+  }
+  .count-part {
+    min-width: 52px;
+  }
+  .count-part span {
+    font-size: 0.6875rem;
+  }
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .stat {
+    align-items: center;
+    padding: 15px 17px;
+  }
+  .stat > div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 3px 12px;
+    width: 100%;
+  }
+  .stat-label {
+    font-size: 0.875rem;
+  }
+  .stat-value {
+    grid-row: span 2;
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+  .stat-note {
+    font-size: 0.75rem;
+  }
+  .stat-icon {
+    display: none;
+  }
+  .right-column {
+    display: flex;
+  }
+  .right-column > * {
+    width: 100%;
+  }
+  .session-row {
+    gap: 10px;
+    padding: 18px 15px;
+  }
+  .session-main strong {
+    font-size: 0.875rem;
+  }
+  .session-time {
+    font-size: 0.8125rem;
+    min-width: 39px;
+  }
+  .session-detail {
+    font-size: 0.75rem;
+  }
+  .schedule-day {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px 18px 5px;
+  }
+  .track-tag {
+    font-size: 0.6875rem;
+  }
+  .month-cell {
+    min-height: 98px;
+  }
+  .month-day-name {
+    font-size: 0.6875rem;
+  }
+  .month-grid {
+    overflow-x: auto;
+    grid-template-columns: repeat(7, minmax(74px, 1fr));
+  }
+  .calendar-event {
+    font-size: 0.6875rem;
+  }
+  .toolbar-left {
+    flex-wrap: wrap;
+  }
+  .toolbar h2 {
+    width: 100%;
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+  }
+  .toolbar-right {
+    flex-wrap: wrap;
+  }
+  .topic-card {
+    padding: 21px;
+  }
+  .topic-card p {
+    font-size: 0.875rem;
+  }
+  .prompt-card p,
+  .ai-intro p {
+    font-size: 0.875rem;
+  }
+  .form-field {
+    font-size: 0.8125rem;
+  }
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .countdown-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .countdown-title {
+    max-width: none;
+  }
+  .countdown {
+    width: 100%;
+    gap: 9px;
+  }
+  .count-part {
+    flex: 1;
+  }
+  .page-heading {
+    display: block;
+  }
+  .heading-actions {
+    margin-top: 18px;
+  }
+  .heading-actions .btn {
+    font-size: 0.8125rem;
+  }
+  .topbar-path strong {
+    font-size: 0.6875rem;
+  }
+  .zone-control {
+    font-size: 0.6875rem;
+  }
+  .topbar-tools {
+    gap: 3px;
+  }
+  .zone-control select {
+    max-width: 125px;
+  }
+  .hero h2 {
+    font-size: 1.35rem;
+  }
+  .hero-title-row {
+    align-items: flex-start;
+  }
+  .bank-logo {
+    width: 40px;
+    height: 46px;
+  }
+  .hero {
+    padding: 22px;
+  }
+  .hero .eyebrow {
+    font-size: 0.625rem;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .dialog-actions {
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .dialog-actions .btn {
+    font-size: 0.75rem;
+  }
+  .panel-head {
+    padding: 20px 16px 17px;
+  }
+  .panel-head h2 {
+    font-size: 0.9375rem;
+  }
+  .week-strip {
+    gap: 2px;
+  }
+  .day-pill {
+    padding: 9px 2px;
+  }
+  .week-strip .day-pill span {
+    font-size: 0.6875rem;
+  }
+}

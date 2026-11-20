@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#163b32" />
+    <meta
+      name="description"
+      content="Личный календарь самообучения C#/.NET и подготовки к техническому собеседованию."
+    />
+    <title>RNX · План развития</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/readability.css" />
+    <script src="/app.js" type="module"></script>
+  </head>
+  <body>
+    <svg
+      class="icon-defs"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="i-grid" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="7" height="7" rx="2" />
+          <rect x="14" y="3" width="7" height="7" rx="2" />
+          <rect x="3" y="14" width="7" height="7" rx="2" />
+          <rect x="14" y="14" width="7" height="7" rx="2" />
+        </symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="16" rx="3" />
+          <path d="M7 3v4m10-4v4M3 11h18m-13 4h1m6 0h1m-8 3h1" />
+        </symbol>
+        <symbol id="i-book" viewBox="0 0 24 24">
+          <path
+            d="M12 5c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-4-1-7-1-10 1Zm0 0v15"
+          />
+        </symbol>
+        <symbol id="i-spark" viewBox="0 0 24 24">
+          <path
+            d="m12 3 2.7 6.3L21 12l-6.3 2.7L12 21l-2.7-6.3L3 12l6.3-2.7L12 3Zm7-1v4m-2-2h4"
+          />
+        </symbol>
+        <symbol id="i-chart" viewBox="0 0 24 24">
+          <path d="M4 3v18h17M8 16v-5m5 5V7m5 9V4" />
+        </symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14" />
+        </symbol>
+        <symbol id="i-search" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 2" />
+        </symbol>
+        <symbol id="i-chevron-left" viewBox="0 0 24 24">
+          <path d="m14 6-6 6 6 6" />
+        </symbol>
+        <symbol id="i-chevron-right" viewBox="0 0 24 24">
+          <path d="m10 6 6 6-6 6" />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <path d="m5 12 4 4L19 6" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+        </symbol>
+        <symbol id="i-play" viewBox="0 0 24 24">
+          <path d="m8 4 12 8L8 20Z" />
+        </symbol>
+        <symbol id="i-pause" viewBox="0 0 24 24">
+          <path d="M8 5v14M16 5v14" />
+        </symbol>
+        <symbol id="i-reset" viewBox="0 0 24 24">
+          <path d="M3 10a9 9 0 1 1 2 8M3 4v6h6" />
+        </symbol>
+        <symbol id="i-code" viewBox="0 0 24 24">
+          <path d="m7 7-5 5 5 5m10-10 5 5-5 5M14 4l-4 16" />
+        </symbol>
+        <symbol id="i-external" viewBox="0 0 24 24">
+          <path d="M14 3h7v7m0-7L10 14M10 3H4v17h17v-6" />
+        </symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24">
+          <rect x="8" y="8" width="13" height="13" rx="2" />
+          <path d="M16 8V3H3v13h5" />
+        </symbol>
+        <symbol id="i-target" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <circle cx="12" cy="12" r="5" />
+          <circle cx="12" cy="12" r="1" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </symbol>
+        <symbol id="i-info" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 11v6m0-10v1" />
+        </symbol>
+        <symbol id="i-trash" viewBox="0 0 24 24">
+          <path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7" />
+        </symbol>
+        <symbol id="i-edit" viewBox="0 0 24 24">
+          <path d="m15 4 5 5M3 21l5-1L21 7l-5-5L3 15v6Z" />
+        </symbol>
+      </defs>
+    </svg>
+    <a href="#main" class="skip-link">К содержимому</a>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="RNX — главная"
+        ><span class="brand-mark">r<span>n</span>x</span
+        ><span class="brand-caption">План развития</span></a
+      >
+      <div class="workspace-label">ЛИЧНОЕ ПРОСТРАНСТВО</div>
+      <nav aria-label="Основная навигация">
+        <a href="#overview" data-page="overview"
+          ><svg class="icon"><use href="#i-grid" /></svg>Обзор</a
+        >
+        <a href="#calendar" data-page="calendar"
+          ><svg class="icon"><use href="#i-calendar" /></svg>Календарь</a
+        >
+        <a href="#topics" data-page="topics"
+          ><svg class="icon"><use href="#i-book" /></svg>База знаний<span
+            class="nav-count"
+            >12</span
+          ></a
+        >
+        <a href="#ai" data-page="ai"
+          ><svg class="icon"><use href="#i-spark" /></svg>AI-практика<span
+            class="new-label"
+            >AI</span
+          ></a
+        >
+        <a href="#progress" data-page="progress"
+          ><svg class="icon"><use href="#i-chart" /></svg>Мой прогресс</a
+        >
+      </nav>
+      <div class="sidebar-goal">
+        <span class="eyebrow">ВАШ СЛЕДУЮЩИЙ ШАГ</span>
+        <div class="sidebar-goal-title">
+          <span class="bank-mini">Т</span><b>Собеседование</b>
+        </div>
+        <p id="sidebar-goal-date">23 ноября · 09:00 МСК</p>
+        <button class="text-button" data-action="goal">
+          Посмотреть цель <svg class="icon"><use href="#i-external" /></svg>
+        </button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="avatar">Я</div>
+        <div>
+          <strong>Моё пространство</strong><span>Личный учебный план</span>
+        </div>
+        <span class="local-indicator" title="Локальное приложение"></span>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-path">
+          <button
+            class="icon-button mobile-menu"
+            data-action="menu"
+            aria-label="Открыть меню"
+          >
+            <svg class="icon"><use href="#i-menu" /></svg></button
+          ><span>Самообучение</span><span class="path-divider">/</span
+          ><strong id="page-crumb">Обзор</strong>
+        </div>
+        <div class="topbar-tools">
+          <button class="search-button" data-action="search">
+            <svg class="icon"><use href="#i-search" /></svg
+            ><span>Найти в плане</span><kbd>Ctrl K</kbd></button
+          ><label class="zone-control"
+            ><svg class="icon"><use href="#i-clock" /></svg
+            ><select id="timezone" aria-label="Часовой пояс">
+              <option value="Europe/Moscow">Москва · UTC+3</option>
+              <option value="Europe/Samara">Самара · UTC+4</option>
+            </select></label
+          >
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="loading-state">
+          <span class="loader"></span>
+          <p>Собираем ваш учебный план…</p>
+        </div>
+      </main>
+      <footer class="footer">
+        <span>Маленькие шаги. Большие возможности.</span
+        ><span
+          >RNX Calendar Plan <span class="footer-dot">·</span> C# / .NET</span
+        >
+      </footer>
+    </div>
+    <dialog id="dialog" aria-labelledby="dialog-title">
+      <div id="dialog-content"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
